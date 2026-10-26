@@ -16,9 +16,7 @@ public sealed class NameService : INameService
     {
         if (string.IsNullOrWhiteSpace(name))
         {
-            throw new ArgumentException(
-                "Debes escribir un nombre.",
-                nameof(name));
+            throw new ArgumentException("Debes escribir un nombre.", nameof(name));
         }
 
         string normalizedName = name.Trim();
