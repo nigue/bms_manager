@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Media.Imaging;
 using bms_manager.Presentation.ViewModels;
 
 namespace bms_manager.Presentation.Views;
@@ -9,6 +10,7 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
 
+        Icon = new BitmapImage(new Uri("pack://application:,,,/Assets/icon.ico"));
         DataContext = viewModel;
     }
 }

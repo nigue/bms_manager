@@ -13,6 +13,7 @@
       <XamlRuntime>Wpf</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
+    <Resource Include="Assets\icon.ico" />
   </ItemGroup>
 
 </Project>
