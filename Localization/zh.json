@@ -1,0 +1,8 @@
+{
+  "LanguageLabel": "语言：",
+  "NameLabel": "姓名：",
+  "SaveButton": "保存",
+  "SaveSuccessFormat": "姓名已成功保存：{0}",
+  "SaveError": "保存姓名时发生错误。",
+  "NameRequired": "请输入姓名。"
+}

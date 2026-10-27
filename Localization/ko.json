@@ -1,0 +1,8 @@
+{
+  "LanguageLabel": "언어:",
+  "NameLabel": "이름:",
+  "SaveButton": "저장",
+  "SaveSuccessFormat": "이름이 성공적으로 저장되었습니다: {0}",
+  "SaveError": "이름을 저장하는 중 오류가 발생했습니다.",
+  "NameRequired": "이름을 입력해 주세요."
+}
