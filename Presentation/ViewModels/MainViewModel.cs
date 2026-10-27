@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using bms_manager.Application.Services;
 using bms_manager.Presentation.Commands;
+using bms_manager.Presentation.Localization;
 
 namespace bms_manager.Presentation.ViewModels;
 
@@ -31,9 +32,11 @@ public sealed class MainViewModel : INotifyPropertyChanged
     /// Crea el ViewModel y configura el comando para guardar el nombre.
     /// </summary>
     /// <param name="nameService">Servicio que procesa y guarda el nombre.</param>
-    public MainViewModel(INameService nameService)
+    /// <param name="localization">Proveedor de localización.</param>
+    public MainViewModel(INameService nameService, LocalizationProvider localization)
     {
         _nameService = nameService;
+        Localization = localization;
         SaveCommand = new RelayCommand(Save);
     }
 
@@ -74,6 +77,11 @@ public sealed class MainViewModel : INotifyPropertyChanged
     /// Obtiene el comando que guarda el nombre actual.
     /// </summary>
     public ICommand SaveCommand { get; }
+    
+    /// <summary>
+    /// Obtiene el provedor de la localización.
+    /// </summary>
+    public LocalizationProvider Localization { get; }
 
     /// <summary>
     /// Guarda el nombre actual mediante el servicio y actualiza el estado
@@ -84,7 +92,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
         try
         {
             _nameService.SaveName(Name);
-            StatusMessage = $"Nombre guardado correctamente: {Name.Trim()}";
+            StatusMessage = string.Format(Localization.SaveSuccessFormat, Name.Trim());
             Name = string.Empty;
         }
         catch (ArgumentException ex)

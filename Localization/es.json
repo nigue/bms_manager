@@ -1,0 +1,7 @@
+﻿{
+  "LanguageLabel": "Idioma:",
+  "NameLabel": "Nombre:",
+  "SaveButton": "Guardar",
+  "SaveSuccessFormat": "Nombre guardado correctamente: {0}",
+  "NameRequired": "Debes escribir un nombre."
+}

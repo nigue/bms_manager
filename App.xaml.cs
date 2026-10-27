@@ -2,6 +2,7 @@
 using bms_manager.Application.Services;
 using bms_manager.Domain.Repositories;
 using bms_manager.Infrastructure.Repositories;
+using bms_manager.Presentation.Localization;
 using bms_manager.Presentation.ViewModels;
 using bms_manager.Presentation.Views;
 
@@ -18,9 +19,9 @@ namespace bms_manager
 
             INameRepository repositoryContract = new InMemoryNameRepository();
             INameService nameService = new NameService(repositoryContract);
-            MainViewModel viewModel = new MainViewModel(nameService);
-            MainWindow window = new MainWindow(viewModel);
-            MainWindow = window;
+            LocalizationProvider localization = new LocalizationProvider();
+            MainViewModel viewModel = new MainViewModel(nameService, localization);            MainWindow window = new MainWindow(viewModel);
+            this.MainWindow = window;
             window.Show();
         }
     }
