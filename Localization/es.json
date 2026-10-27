@@ -3,5 +3,6 @@
   "NameLabel": "Nombre:",
   "SaveButton": "Guardar",
   "SaveSuccessFormat": "Nombre guardado correctamente: {0}",
+  "SaveError": "Ocurrió un error al guardar el nombre.",
   "NameRequired": "Debes escribir un nombre."
 }

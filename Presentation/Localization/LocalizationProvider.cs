@@ -61,6 +61,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
             OnPropertyChanged(nameof(NameLabel));
             OnPropertyChanged(nameof(SaveButton));
             OnPropertyChanged(nameof(SaveSuccessFormat));
+            OnPropertyChanged(nameof(SaveError));
             OnPropertyChanged(nameof(NameRequired));
         }
     }
@@ -69,6 +70,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
     public string NameLabel => GetText("NameLabel");
     public string SaveButton => GetText("SaveButton");
     public string SaveSuccessFormat => GetText("SaveSuccessFormat");
+    public string SaveError => GetText("SaveError");
     public string NameRequired => GetText("NameRequired");
 
     public event PropertyChangedEventHandler? PropertyChanged;
