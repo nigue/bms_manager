@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using bms_manager.Application.Services;
+using bms_manager.Application.Services.Implementations;
 using bms_manager.Domain.Repositories;
 using bms_manager.Infrastructure.Repositories;
 using bms_manager.Presentation.Localization;
