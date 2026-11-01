@@ -19,8 +19,8 @@ namespace bms_manager
             base.OnStartup(e);
 
             INameRepository repositoryContract = new InMemoryNameRepository();
+            INameService nameService = new NameService(repositoryContract);
             LocalizationProvider localization = new LocalizationProvider();
-            INameService nameService = new NameService(repositoryContract, localization);
             MainViewModel viewModel = new MainViewModel(nameService, localization);
             MainWindow window = new MainWindow(viewModel);
             this.MainWindow = window;

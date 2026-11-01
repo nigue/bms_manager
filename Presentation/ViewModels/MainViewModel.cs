@@ -95,9 +95,9 @@ public sealed class MainViewModel : INotifyPropertyChanged
             StatusMessage = string.Format(Localization.SaveSuccessFormat, Name.Trim());
             Name = string.Empty;
         }
-        catch (ArgumentException ex)
+        catch (ArgumentException)
         {
-            StatusMessage = ex.Message;
+            StatusMessage = Localization.SaveError;
         }
     }
 
