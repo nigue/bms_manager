@@ -24,6 +24,7 @@ MiProyectoWpf/
 │   ├── Views/
 │   ├── ViewModels/
 │   ├── Commands/
+│   ├── Localization/                # Proveedor de textos localizados para la interfaz
 │   └── DependencyInjection.cs       # Opcional cuando haya suficientes registros
 │
 ├── Application/
@@ -34,9 +35,11 @@ MiProyectoWpf/
 │   ├── Repositories/
 │   └── Models/                      # Solo cuando el dominio necesite modelos propios
 │
-└── Infrastructure/
-    ├── Repositories/
-    └── DependencyInjection.cs       # Opcional cuando haya suficientes registros
+├── Infrastructure/
+│   ├── Repositories/
+│   └── DependencyInjection.cs       # Opcional cuando haya suficientes registros
+│
+└── Localization/                    # Recursos de texto por idioma, por ejemplo archivos JSON
 ```
 
 No es obligatorio crear de inmediato todos los directorios o archivos opcionales. Añádelos cuando exista código que lo justifique.
@@ -84,6 +87,15 @@ Contiene los detalles técnicos concretos de acceso a recursos externos.
 Las implementaciones concretas deben implementar el contrato correspondiente. El resto de la aplicación debe depender de la interfaz, no de la implementación.
 
 Una implementación `InMemory...` sirve para demostraciones y pruebas simples; no debe describirse como una base de datos persistente. Sus datos desaparecen al finalizar el proceso, salvo que se implemente una persistencia real.
+
+### 2.5 Localization
+
+Contiene los recursos de texto traducidos que utiliza la aplicación.
+
+- `Localization/`: archivos de recursos separados por idioma, por ejemplo `en.json` y `es.json`. Son datos; no deben contener lógica de presentación ni de negocio.
+- `Presentation/Localization/`: proveedor o estado de presentación que carga los recursos y expone los textos localizados a las vistas mediante bindings.
+
+Mantén las claves correspondientes consistentes entre los archivos de idioma. Cuando la interfaz use el proveedor de localización, evita incluir textos visibles para el usuario directamente en XAML o ViewModels.
 
 ## 3. Dirección de las dependencias
 
