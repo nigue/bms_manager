@@ -1,5 +1,6 @@
 ﻿{
   "HelpMenuLabel": "Help",
+  "VersionSubMenuLabel": "Version",
   "LanguageLabel": "Language:",
   "BmsEventLabel": "BMS event:",
   "NameLabel": "Name:",

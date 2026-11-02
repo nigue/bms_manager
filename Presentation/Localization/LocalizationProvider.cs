@@ -34,6 +34,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
 
     public IReadOnlyList<string> AvailableLanguages { get; }
     public string HelpMenuLabel => GetText("HelpMenuLabel");
+    public string VersionSubMenuLabel => GetText("VersionSubMenuLabel");
 
     public string CurrentLanguage
     {
@@ -59,6 +60,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
 
             OnPropertyChanged();
             OnPropertyChanged(nameof(HelpMenuLabel));
+            OnPropertyChanged(nameof(VersionSubMenuLabel));
             OnPropertyChanged(nameof(LanguageLabel));
             OnPropertyChanged(nameof(BmsEventLabel));
             OnPropertyChanged(nameof(NameLabel));

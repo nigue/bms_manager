@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Menu>
         <MenuItem Header="{Binding Localization.HelpMenuLabel}">
-            <MenuItem Header="_Versión"
+            <MenuItem Header="{Binding Localization.VersionSubMenuLabel}"
                       Click="ShowVersion_Click" />
         </MenuItem>
     </Menu>
