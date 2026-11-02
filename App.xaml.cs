@@ -1,30 +1,52 @@
 ﻿using System.Windows;
-using bms_manager.Application.Services;
-using bms_manager.Application.Services.Implementations;
-using bms_manager.Domain.Repositories;
-using bms_manager.Infrastructure.Repositories;
-using bms_manager.Presentation.Localization;
-using bms_manager.Presentation.ViewModels;
+using bms_manager.Application;
+using bms_manager.Infrastructure;
+using bms_manager.Presentation;
 using bms_manager.Presentation.Views;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace bms_manager
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : System.Windows.Application
     {
+        private IHost? _host;
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            INameRepository repositoryContract = new InMemoryNameRepository();
-            INameService nameService = new NameService(repositoryContract);
-            LocalizationProvider localization = new LocalizationProvider();
-            MainViewModel viewModel = new MainViewModel(nameService, localization);
-            MainWindow window = new MainWindow(viewModel);
-            this.MainWindow = window;
-            window.Show();
+            _host = Host.CreateDefaultBuilder()
+                .ConfigureServices((_, services) =>
+                {
+                    services
+                        .AddApplication()
+                        .AddInfrastructure()
+                        .AddPresentation();
+                })
+                .Build();
+
+            _host.Start();
+
+            MainWindow = _host.Services.GetRequiredService<MainWindow>();
+            MainWindow.Show();
+        }
+
+        protected override void OnExit(ExitEventArgs e)
+        {
+            if (_host is not null)
+            {
+                try
+                {
+                    _host.StopAsync().GetAwaiter().GetResult();
+                }
+                finally
+                {
+                    _host.Dispose();
+                }
+            }
+
+            base.OnExit(e);
         }
     }
 }

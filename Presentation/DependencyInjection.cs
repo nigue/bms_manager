@@ -1,0 +1,18 @@
+﻿using bms_manager.Presentation.Localization;
+using bms_manager.Presentation.ViewModels;
+using bms_manager.Presentation.Views;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace bms_manager.Presentation;
+
+public static class DependencyInjection
+{
+    public static IServiceCollection AddPresentation(this IServiceCollection services)
+    {
+        services.AddSingleton<LocalizationProvider>();
+        services.AddTransient<MainViewModel>();
+        services.AddTransient<MainWindow>();
+
+        return services;
+    }
+}
