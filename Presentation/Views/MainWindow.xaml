@@ -1,42 +1,50 @@
 ﻿<Window x:Class="bms_manager.Presentation.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sections="clr-namespace:bms_manager.Presentation.Views.Sections"
         Title="BMS Manager - v0.0.1"
         Width="384"
         Height="360"
         WindowStartupLocation="CenterScreen">
 
-    <StackPanel Margin="20">
-        <TextBlock Text="{Binding Localization.LanguageLabel}"
-                   Margin="0,0,0,6" />
+    <DockPanel>
+        <sections:PrincipalMenuView DockPanel.Dock="Top" />
+        <Border DockPanel.Dock="Top"
+                Height="1"
+                Background="LightGray"
+                Margin="0,0" />
 
-        <ComboBox ItemsSource="{Binding Localization.AvailableLanguages}"
-                  SelectedItem="{Binding Localization.CurrentLanguage, Mode=TwoWay}"
-                  Margin="0,0,0,12" />
+        <StackPanel Margin="20">
+            <TextBlock Text="{Binding Localization.LanguageLabel}"
+                       Margin="0,0,0,6" />
 
-        <TextBlock Text="{Binding Localization.BmsEventLabel}"
-                   Margin="0,0,0,6" />
+            <ComboBox ItemsSource="{Binding Localization.AvailableLanguages}"
+                      SelectedItem="{Binding Localization.CurrentLanguage, Mode=TwoWay}"
+                      Margin="0,0,0,12" />
 
-        <ComboBox ItemsSource="{Binding BmsEvents}"
-                  DisplayMemberPath="name"
-                  Margin="0,0,0,12" />
+            <TextBlock Text="{Binding Localization.BmsEventLabel}"
+                       Margin="0,0,0,6" />
 
-        <TextBlock Text="{Binding Localization.NameLabel}"
-                   Margin="0,0,0,6" />
+            <ComboBox ItemsSource="{Binding BmsEvents}"
+                      DisplayMemberPath="name"
+                      Margin="0,0,0,12" />
 
-        <TextBox Text="{Binding Name,
-                            Mode=TwoWay,
-                            UpdateSourceTrigger=PropertyChanged}"
-                 Padding="6"
-                 Margin="0,0,0,12" />
+            <TextBlock Text="{Binding Localization.NameLabel}"
+                       Margin="0,0,0,6" />
 
-        <Button Content="{Binding Localization.SaveButton}"
-                Command="{Binding SaveCommand}"
-                Padding="8" />
+            <TextBox Text="{Binding Name,
+                                Mode=TwoWay,
+                                UpdateSourceTrigger=PropertyChanged}"
+                     Padding="6"
+                     Margin="0,0,0,12" />
 
-        <TextBlock Text="{Binding StatusMessage}"
-                   TextWrapping="Wrap"
-                   Margin="0,12,0,0" />
-    </StackPanel>
+            <Button Content="{Binding Localization.SaveButton}"
+                    Command="{Binding SaveCommand}"
+                    Padding="8" />
 
+            <TextBlock Text="{Binding StatusMessage}"
+                       TextWrapping="Wrap"
+                       Margin="0,12,0,0" />
+        </StackPanel>
+    </DockPanel>
 </Window>

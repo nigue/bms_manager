@@ -1,0 +1,10 @@
+<UserControl x:Class="bms_manager.Presentation.Views.Sections.PrincipalMenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Menu>
+        <MenuItem Header="_Ayuda">
+            <MenuItem Header="_Versión"
+                      Click="ShowVersion_Click" />
+        </MenuItem>
+    </Menu>
+</UserControl>
