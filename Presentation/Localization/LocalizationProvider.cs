@@ -33,6 +33,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
     }
 
     public IReadOnlyList<string> AvailableLanguages { get; }
+    public string HelpMenuLabel => GetText("HelpMenuLabel");
 
     public string CurrentLanguage
     {
@@ -57,6 +58,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
             _texts = newTexts;
 
             OnPropertyChanged();
+            OnPropertyChanged(nameof(HelpMenuLabel));
             OnPropertyChanged(nameof(LanguageLabel));
             OnPropertyChanged(nameof(BmsEventLabel));
             OnPropertyChanged(nameof(NameLabel));
