@@ -58,6 +58,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
 
             OnPropertyChanged();
             OnPropertyChanged(nameof(LanguageLabel));
+            OnPropertyChanged(nameof(BmsEventLabel));
             OnPropertyChanged(nameof(NameLabel));
             OnPropertyChanged(nameof(SaveButton));
             OnPropertyChanged(nameof(SaveSuccessFormat));
@@ -67,6 +68,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
     }
 
     public string LanguageLabel => GetText("LanguageLabel");
+    public string BmsEventLabel => GetText("BmsEventLabel");
     public string NameLabel => GetText("NameLabel");
     public string SaveButton => GetText("SaveButton");
     public string SaveSuccessFormat => GetText("SaveSuccessFormat");

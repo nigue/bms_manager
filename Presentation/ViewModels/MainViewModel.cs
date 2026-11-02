@@ -1,9 +1,10 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using bms_manager.Application.Services;
 using bms_manager.Presentation.Commands;
 using bms_manager.Presentation.Localization;
+using bms_manager.Presentation.Models;
 
 namespace bms_manager.Presentation.ViewModels;
 
@@ -17,6 +18,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
     /// Servicio de aplicación que guarda los nombres.
     /// </summary>
     private readonly INameService _nameService;
+    private readonly IReadOnlyList<BmsEventModel> _bmsEvents;
 
     /// <summary>
     /// Nombre que el usuario ha introducido en la interfaz.
@@ -33,12 +35,20 @@ public sealed class MainViewModel : INotifyPropertyChanged
     /// </summary>
     /// <param name="nameService">Servicio que procesa y guarda el nombre.</param>
     /// <param name="localization">Proveedor de localización.</param>
-    public MainViewModel(INameService nameService, LocalizationProvider localization)
+    public MainViewModel(
+        INameService nameService,
+        IBmsEventService bmsEventService,
+        LocalizationProvider localization)
     {
         _nameService = nameService;
+        _bmsEvents = bmsEventService.GetAllEvents()
+            .Select(bmsEvent => bmsEvent.ToModel())
+            .ToArray();
         Localization = localization;
         SaveCommand = new RelayCommand(Save);
     }
+
+    public IReadOnlyList<BmsEventModel> BmsEvents => _bmsEvents;
 
     /// <summary>
     /// Obtiene o establece el nombre introducido por el usuario.

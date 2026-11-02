@@ -1,5 +1,6 @@
 ﻿{
   "LanguageLabel": "Idioma:",
+  "BmsEventLabel": "Evento BMS:",
   "NameLabel": "Nombre:",
   "SaveButton": "Guardar",
   "SaveSuccessFormat": "Nombre guardado correctamente: {0}",

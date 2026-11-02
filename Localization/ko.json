@@ -1,5 +1,6 @@
 {
   "LanguageLabel": "언어:",
+  "BmsEventLabel": "BMS 이벤트:",
   "NameLabel": "이름:",
   "SaveButton": "저장",
   "SaveSuccessFormat": "이름이 성공적으로 저장되었습니다: {0}",

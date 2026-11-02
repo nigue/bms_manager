@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="BMS Manager - v0.0.1"
         Width="384"
-        Height="288"
+        Height="360"
         WindowStartupLocation="CenterScreen">
 
     <StackPanel Margin="20">
@@ -12,6 +12,13 @@
 
         <ComboBox ItemsSource="{Binding Localization.AvailableLanguages}"
                   SelectedItem="{Binding Localization.CurrentLanguage, Mode=TwoWay}"
+                  Margin="0,0,0,12" />
+
+        <TextBlock Text="{Binding Localization.BmsEventLabel}"
+                   Margin="0,0,0,6" />
+
+        <ComboBox ItemsSource="{Binding BmsEvents}"
+                  DisplayMemberPath="name"
                   Margin="0,0,0,12" />
 
         <TextBlock Text="{Binding Localization.NameLabel}"

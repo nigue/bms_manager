@@ -1,5 +1,6 @@
 {
   "LanguageLabel": "语言：",
+  "BmsEventLabel": "BMS 事件：",
   "NameLabel": "姓名：",
   "SaveButton": "保存",
   "SaveSuccessFormat": "姓名已成功保存：{0}",
