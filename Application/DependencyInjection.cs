@@ -10,6 +10,7 @@ public static class DependencyInjection
     {
         services.AddTransient<INameService, NameService>();
         services.AddTransient<IBmsEventService, BmsEventService>();
+        services.AddTransient<IAppConfigurationService, AppConfigurationService>();
 
         return services;
     }

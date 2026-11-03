@@ -11,6 +11,5 @@ public record AppConfigurationDto(
     public AppConfiguration ToModel() => new (
         DownloadDir,
         SelectedLanguage,
-        DecompressDir
-    );
+        DecompressDir);
 }
