@@ -10,6 +10,7 @@ public static class DependencyInjection
     {
         services.AddSingleton<INameRepository, InMemoryNameRepository>();
         services.AddSingleton<IBmsEventRepository, InMemoryBmsEventRepository>();
+        services.AddSingleton<IAppConfigurationRepository, AppConfigurationRepository>();
 
         return services;
     }
