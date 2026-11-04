@@ -2,6 +2,7 @@
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
+using bms_manager.Presentation.Models;
 
 namespace bms_manager.Presentation.Localization;
 
@@ -18,9 +19,9 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
         AvailableLanguages = Directory
             .GetFiles(_localizationDirectory, "*.json")
             .Select(Path.GetFileNameWithoutExtension)
-            .Where(language => language is not null)
-            .Select(language => language!)
-            .OrderBy(language => language)
+            .Where(code => code is not null)
+            .Select(code => new LanguageOption(code!, GetLanguageDisplayName(code!)))
+            .OrderBy(language => language.DisplayName)
             .ToArray();
 
         if (AvailableLanguages.Count == 0)
@@ -28,11 +29,13 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
             throw new InvalidOperationException($"No se encontraron archivos de idioma en '{_localizationDirectory}'.");
         }
 
-        _currentLanguage = AvailableLanguages.Contains("es") ? "es" : AvailableLanguages[0];
+        _currentLanguage = AvailableLanguages.Any(language => language.Code == "es")
+            ? "es"
+            : AvailableLanguages[0].Code;
         _texts = LoadLanguage(_currentLanguage);
     }
 
-    public IReadOnlyList<string> AvailableLanguages { get; }
+    public IReadOnlyList<LanguageOption> AvailableLanguages { get; }
     public string HelpMenuLabel => GetText("HelpMenuLabel");
     public string VersionSubMenuLabel => GetText("VersionSubMenuLabel");
 
@@ -43,7 +46,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
         {
             ArgumentException.ThrowIfNullOrWhiteSpace(value);
 
-            if (!AvailableLanguages.Contains(value))
+            if (AvailableLanguages.All(language => language.Code != value))
             {
                 throw new ArgumentException($"El idioma '{value}' no está disponible.", nameof(value));
             }
@@ -101,4 +104,14 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
+
+    private static string GetLanguageDisplayName(string code) => code switch
+    {
+        "en" => "English",
+        "es" => "Spanish",
+        "ja" => "Japanese",
+        "ko" => "Korean",
+        "zh" => "Chinese",
+        _ => throw new InvalidDataException($"No hay un nombre visible configurado para el idioma '{code}'.")
+    };
 }

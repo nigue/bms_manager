@@ -19,7 +19,9 @@
                        Margin="0,0,0,6" />
 
             <ComboBox ItemsSource="{Binding Localization.AvailableLanguages}"
-                      SelectedItem="{Binding Localization.CurrentLanguage, Mode=TwoWay}"
+                      DisplayMemberPath="DisplayName"
+                      SelectedValuePath="Code"
+                      SelectedValue="{Binding Localization.CurrentLanguage, Mode=TwoWay}"
                       Margin="0,0,0,12" />
 
             <TextBlock Text="{Binding Localization.BmsEventLabel}"
