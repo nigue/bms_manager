@@ -1,4 +1,7 @@
 {
+  "ConfigurationMenuLabel": "設定",
+  "OptionsSubMenuLabel": "オプション",
+  "OptionsWindowTitle": "オプション",
   "HelpMenuLabel": "ヘルプ",
   "VersionSubMenuLabel": "バージョン",
   "LanguageLabel": "言語：",

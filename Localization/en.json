@@ -1,4 +1,7 @@
 ﻿{
+  "ConfigurationMenuLabel": "Configuration",
+  "OptionsSubMenuLabel": "Options",
+  "OptionsWindowTitle": "Options",
   "HelpMenuLabel": "Help",
   "VersionSubMenuLabel": "Version",
   "LanguageLabel": "Language:",

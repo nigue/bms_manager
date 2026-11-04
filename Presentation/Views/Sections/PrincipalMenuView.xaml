@@ -2,6 +2,10 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Menu>
+        <MenuItem Header="{Binding Localization.ConfigurationMenuLabel}">
+            <MenuItem Header="{Binding Localization.OptionsSubMenuLabel}"
+                      Click="ShowOptions_Click" />
+        </MenuItem>
         <MenuItem Header="{Binding Localization.HelpMenuLabel}">
             <MenuItem Header="{Binding Localization.VersionSubMenuLabel}"
                       Click="ShowVersion_Click" />

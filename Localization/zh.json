@@ -1,4 +1,7 @@
 {
+  "ConfigurationMenuLabel": "配置",
+  "OptionsSubMenuLabel": "选项",
+  "OptionsWindowTitle": "选项",
   "HelpMenuLabel": "帮助",
   "VersionSubMenuLabel": "版本",
   "LanguageLabel": "语言：",

@@ -1,0 +1,8 @@
+<Window x:Class="bms_manager.Presentation.Views.OptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding Localization.OptionsWindowTitle}"
+        Width="480"
+        Height="320"
+        WindowStartupLocation="CenterOwner">
+</Window>

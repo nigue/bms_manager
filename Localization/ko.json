@@ -1,4 +1,7 @@
 {
+  "ConfigurationMenuLabel": "설정",
+  "OptionsSubMenuLabel": "옵션",
+  "OptionsWindowTitle": "옵션",
   "HelpMenuLabel": "도움말",
   "VersionSubMenuLabel": "버전",
   "LanguageLabel": "언어:",

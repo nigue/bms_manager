@@ -36,6 +36,9 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
     }
 
     public IReadOnlyList<LanguageOption> AvailableLanguages { get; }
+    public string ConfigurationMenuLabel => GetText("ConfigurationMenuLabel");
+    public string OptionsSubMenuLabel => GetText("OptionsSubMenuLabel");
+    public string OptionsWindowTitle => GetText("OptionsWindowTitle");
     public string HelpMenuLabel => GetText("HelpMenuLabel");
     public string VersionSubMenuLabel => GetText("VersionSubMenuLabel");
 
@@ -62,6 +65,9 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
             _texts = newTexts;
 
             OnPropertyChanged();
+            OnPropertyChanged(nameof(ConfigurationMenuLabel));
+            OnPropertyChanged(nameof(OptionsSubMenuLabel));
+            OnPropertyChanged(nameof(OptionsWindowTitle));
             OnPropertyChanged(nameof(HelpMenuLabel));
             OnPropertyChanged(nameof(VersionSubMenuLabel));
             OnPropertyChanged(nameof(LanguageLabel));

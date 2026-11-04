@@ -11,6 +11,17 @@ public partial class PrincipalMenuView : UserControl
         InitializeComponent();
     }
 
+    private void ShowOptions_Click(object sender, RoutedEventArgs e)
+    {
+        var optionsWindow = new OptionsWindow
+        {
+            DataContext = DataContext,
+            Owner = Window.GetWindow(this)
+        };
+
+        optionsWindow.Show();
+    }
+
     private void ShowVersion_Click(object sender, RoutedEventArgs e)
     {
         var version = Assembly.GetEntryAssembly()?.GetName().Version?.ToString()
