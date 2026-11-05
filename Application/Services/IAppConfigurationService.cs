@@ -1,6 +1,4 @@
-﻿using bms_manager.Domain.Model;
-
-namespace bms_manager.Application.Services;
+﻿namespace bms_manager.Application.Services;
 
 public interface IAppConfigurationService
 {

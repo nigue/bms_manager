@@ -8,8 +8,8 @@ public record AppConfiguration(
     string DecompressDir
 )
 {
-    public AppConfigurationDto ToDto() => new (
-        DownloadDir, 
-        SelectedLanguage, 
+    public AppConfigurationDto ToDto() => new(
+        DownloadDir,
+        SelectedLanguage,
         DecompressDir);
 }

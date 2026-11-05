@@ -19,8 +19,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Resource Include="Assets\icon.ico" />
-    <Content Include="Localization\*.json"
-             CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Localization\*.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

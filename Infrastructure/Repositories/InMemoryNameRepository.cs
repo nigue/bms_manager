@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using bms_manager.Domain.Repositories;
+﻿using bms_manager.Domain.Repositories;
 
 namespace bms_manager.Infrastructure.Repositories;
 

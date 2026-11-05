@@ -8,7 +8,7 @@ public record AppConfigurationDto(
     string DecompressDir
 )
 {
-    public AppConfiguration ToModel() => new (
+    public AppConfiguration ToModel() => new(
         DownloadDir,
         SelectedLanguage,
         DecompressDir);

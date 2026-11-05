@@ -1,10 +1,10 @@
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
 using bms_manager.Application.Services;
 using bms_manager.Presentation.Commands;
 using bms_manager.Presentation.Localization;
 using bms_manager.Presentation.Models;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Windows.Input;
 
 namespace bms_manager.Presentation.ViewModels;
 
@@ -87,7 +87,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
     /// Obtiene el comando que guarda el nombre actual.
     /// </summary>
     public ICommand SaveCommand { get; }
-    
+
     /// <summary>
     /// Obtiene el provedor de la localización.
     /// </summary>

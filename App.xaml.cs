@@ -1,12 +1,12 @@
-﻿using System.Windows;
-using System.IO;
-using System.Text.Json;
-using bms_manager.Application;
+﻿using bms_manager.Application;
 using bms_manager.Infrastructure;
 using bms_manager.Presentation;
 using bms_manager.Presentation.Views;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.IO;
+using System.Text.Json;
+using System.Windows;
 
 namespace bms_manager
 {
