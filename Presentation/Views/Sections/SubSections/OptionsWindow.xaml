@@ -1,4 +1,4 @@
-<Window x:Class="bms_manager.Presentation.Views.OptionsWindow"
+<Window x:Class="bms_manager.Presentation.Views.Sections.SubSections.OptionsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="{Binding Localization.OptionsWindowTitle}"

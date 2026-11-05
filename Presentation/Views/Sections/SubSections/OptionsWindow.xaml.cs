@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace bms_manager.Presentation.Views;
+namespace bms_manager.Presentation.Views.Sections.SubSections;
 
 public partial class OptionsWindow : Window
 {
