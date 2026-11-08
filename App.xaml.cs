@@ -50,7 +50,7 @@ namespace bms_manager
             var defaultSettings = new
             {
                 download_dir = @"%LocalAppData%\BmsManager\Downloads",
-                selected_language = "English",
+                selected_language = "en",
                 decompress_dir = @"%LocalAppData%\BmsManager\Decompress"
             };
 

@@ -1,4 +1,5 @@
 ﻿using bms_manager.Presentation.Models;
+using bms_manager.Application.Services;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -12,7 +13,7 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
     private Dictionary<string, string> _texts = [];
     private string _currentLanguage;
 
-    public LocalizationProvider()
+    public LocalizationProvider(IAppConfigurationService configurationService)
     {
         _localizationDirectory = Path.Combine(AppContext.BaseDirectory, "Localization");
 
@@ -29,13 +30,31 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
             throw new InvalidOperationException($"No se encontraron archivos de idioma en '{_localizationDirectory}'.");
         }
 
-        _currentLanguage = AvailableLanguages.Any(language => language.Code == "es")
-            ? "es"
-            : AvailableLanguages[0].Code;
+        string configuredLanguage = configurationService.GetSelectedLanguage();
+        _currentLanguage = ResolveLanguageCode(configuredLanguage);
+        if (!string.Equals(configuredLanguage, _currentLanguage, StringComparison.Ordinal))
+        {
+            configurationService.SetSelectedLanguage(_currentLanguage);
+        }
+
         _texts = LoadLanguage(_currentLanguage);
     }
 
     public IReadOnlyList<LanguageOption> AvailableLanguages { get; }
+    public string ResolveLanguageCode(string language)
+    {
+        LanguageOption? option = AvailableLanguages.FirstOrDefault(item =>
+            string.Equals(item.Code, language, StringComparison.OrdinalIgnoreCase)
+            || string.Equals(item.DisplayName, language, StringComparison.OrdinalIgnoreCase));
+
+        if (option is not null)
+        {
+            return option.Code;
+        }
+
+        throw new InvalidDataException($"El idioma configurado '{language}' no está disponible.");
+    }
+
     public string ConfigurationMenuLabel => GetText("ConfigurationMenuLabel");
     public string OptionsSubMenuLabel => GetText("OptionsSubMenuLabel");
     public string OptionsWindowTitle => GetText("OptionsWindowTitle");

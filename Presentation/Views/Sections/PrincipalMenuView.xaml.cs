@@ -1,8 +1,6 @@
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
-using bms_manager.Presentation.ViewModels;
-using bms_manager.Presentation.Views.Sections.SubSections;
 
 namespace bms_manager.Presentation.Views.Sections;
 
@@ -13,19 +11,11 @@ public partial class PrincipalMenuView : UserControl
         InitializeComponent();
     }
 
+    public event EventHandler? OptionsRequested;
+
     private void ShowOptions_Click(object sender, RoutedEventArgs e)
     {
-        if (DataContext is not MainViewModel mainViewModel)
-        {
-            throw new InvalidOperationException("No se pudo obtener el modelo de la ventana principal.");
-        }
-
-        var optionsWindow = new OptionsWindow(mainViewModel.Localization)
-        {
-            Owner = Window.GetWindow(this)
-        };
-
-        optionsWindow.Show();
+        OptionsRequested?.Invoke(this, EventArgs.Empty);
     }
 
     private void ShowVersion_Click(object sender, RoutedEventArgs e)

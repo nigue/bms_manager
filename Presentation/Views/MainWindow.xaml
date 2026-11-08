@@ -8,7 +8,8 @@
         WindowStartupLocation="CenterScreen">
 
     <DockPanel>
-        <sections:PrincipalMenuView DockPanel.Dock="Top" />
+        <sections:PrincipalMenuView x:Name="PrincipalMenu"
+                                    DockPanel.Dock="Top" />
         <Border DockPanel.Dock="Top"
                 Height="1"
                 Background="LightGray"
