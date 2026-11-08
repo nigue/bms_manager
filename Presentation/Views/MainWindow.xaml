@@ -15,15 +15,6 @@
                 Margin="0,0" />
 
         <StackPanel Margin="20">
-            <TextBlock Text="{Binding Localization.LanguageLabel}"
-                       Margin="0,0,0,6" />
-
-            <ComboBox ItemsSource="{Binding Localization.AvailableLanguages}"
-                      DisplayMemberPath="DisplayName"
-                      SelectedValuePath="Code"
-                      SelectedValue="{Binding Localization.CurrentLanguage, Mode=TwoWay}"
-                      Margin="0,0,0,12" />
-
             <TextBlock Text="{Binding Localization.BmsEventLabel}"
                        Margin="0,0,0,6" />
 

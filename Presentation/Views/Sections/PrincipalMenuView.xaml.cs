@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using bms_manager.Presentation.ViewModels;
 using bms_manager.Presentation.Views.Sections.SubSections;
 
 namespace bms_manager.Presentation.Views.Sections;
@@ -14,9 +15,13 @@ public partial class PrincipalMenuView : UserControl
 
     private void ShowOptions_Click(object sender, RoutedEventArgs e)
     {
-        var optionsWindow = new OptionsWindow
+        if (DataContext is not MainViewModel mainViewModel)
         {
-            DataContext = DataContext,
+            throw new InvalidOperationException("No se pudo obtener el modelo de la ventana principal.");
+        }
+
+        var optionsWindow = new OptionsWindow(mainViewModel.Localization)
+        {
             Owner = Window.GetWindow(this)
         };
 
