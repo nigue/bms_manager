@@ -11,6 +11,7 @@ public static class DependencyInjection
     {
         services.AddSingleton<LocalizationProvider>();
         services.AddTransient<MainViewModel>();
+        services.AddTransient<OptionsViewModel>();
         services.AddTransient<MainWindow>();
 
         return services;

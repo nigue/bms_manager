@@ -1,4 +1,3 @@
-using bms_manager.Application.Services;
 using bms_manager.Presentation.ViewModels;
 using bms_manager.Presentation.Views.Sections.SubSections;
 using System.Windows;
@@ -8,9 +7,7 @@ namespace bms_manager.Presentation.Views;
 
 public partial class MainWindow : Window
 {
-    public MainWindow(
-        MainViewModel viewModel,
-        IAppConfigurationService configurationService)
+    public MainWindow(MainViewModel viewModel, OptionsViewModel optionsViewModel)
     {
         InitializeComponent();
 
@@ -18,7 +15,7 @@ public partial class MainWindow : Window
         DataContext = viewModel;
         PrincipalMenu.OptionsRequested += (_, _) =>
         {
-            var optionsWindow = new OptionsWindow(viewModel.Localization, configurationService)
+            var optionsWindow = new OptionsWindow(optionsViewModel)
             {
                 Owner = this
             };
