@@ -1,4 +1,5 @@
 ﻿using bms_manager.Application;
+using bms_manager.Application.Services;
 using bms_manager.Infrastructure;
 using bms_manager.Presentation;
 using bms_manager.Presentation.Views;
@@ -31,9 +32,19 @@ namespace bms_manager
                 .Build();
 
             _host.Start();
+            EnsureConfiguredDirectoriesExist(_host.Services.GetRequiredService<IAppConfigurationService>());
 
             MainWindow = _host.Services.GetRequiredService<MainWindow>();
             MainWindow.Show();
+        }
+
+        private static void EnsureConfiguredDirectoriesExist(IAppConfigurationService configurationService)
+        {
+            string downloadDirectory = Environment.ExpandEnvironmentVariables(configurationService.GetDownloadDir());
+            string decompressDirectory = Environment.ExpandEnvironmentVariables(configurationService.GetDecompressDir());
+
+            Directory.CreateDirectory(downloadDirectory);
+            Directory.CreateDirectory(decompressDirectory);
         }
 
         private static void EnsureSettingsFileExists()
@@ -54,9 +65,7 @@ namespace bms_manager
                 decompress_dir = @"%LocalAppData%\BmsManager\Decompress"
             };
 
-            string json = JsonSerializer.Serialize(
-                defaultSettings,
-                new JsonSerializerOptions { WriteIndented = true });
+            string json = JsonSerializer.Serialize(defaultSettings, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(settingsFilePath, json);
         }
 
