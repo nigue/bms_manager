@@ -5,6 +5,8 @@
   "HelpMenuLabel": "도움말",
   "VersionSubMenuLabel": "버전",
   "LanguageLabel": "언어:",
+  "DecompressDirectoryLabel": "압축 해제 디렉터리:",
+  "BrowseButton": "찾아보기",
   "BmsEventLabel": "BMS 이벤트:",
   "NameLabel": "이름:",
   "SaveButton": "저장",

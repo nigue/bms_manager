@@ -5,6 +5,8 @@
   "HelpMenuLabel": "帮助",
   "VersionSubMenuLabel": "版本",
   "LanguageLabel": "语言：",
+  "DecompressDirectoryLabel": "解压目录：",
+  "BrowseButton": "浏览",
   "BmsEventLabel": "BMS 事件：",
   "NameLabel": "姓名：",
   "SaveButton": "保存",

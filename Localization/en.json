@@ -5,6 +5,8 @@
   "HelpMenuLabel": "Help",
   "VersionSubMenuLabel": "Version",
   "LanguageLabel": "Language:",
+  "DecompressDirectoryLabel": "Decompression directory:",
+  "BrowseButton": "Browse",
   "BmsEventLabel": "BMS event:",
   "NameLabel": "Name:",
   "SaveButton": "Save",

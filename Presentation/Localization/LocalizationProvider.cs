@@ -90,6 +90,8 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
             OnPropertyChanged(nameof(HelpMenuLabel));
             OnPropertyChanged(nameof(VersionSubMenuLabel));
             OnPropertyChanged(nameof(LanguageLabel));
+            OnPropertyChanged(nameof(DecompressDirectoryLabel));
+            OnPropertyChanged(nameof(BrowseButton));
             OnPropertyChanged(nameof(BmsEventLabel));
             OnPropertyChanged(nameof(NameLabel));
             OnPropertyChanged(nameof(SaveButton));
@@ -100,6 +102,8 @@ public sealed class LocalizationProvider : INotifyPropertyChanged
     }
 
     public string LanguageLabel => GetText("LanguageLabel");
+    public string DecompressDirectoryLabel => GetText("DecompressDirectoryLabel");
+    public string BrowseButton => GetText("BrowseButton");
     public string BmsEventLabel => GetText("BmsEventLabel");
     public string NameLabel => GetText("NameLabel");
     public string SaveButton => GetText("SaveButton");

@@ -5,6 +5,8 @@
   "HelpMenuLabel": "ヘルプ",
   "VersionSubMenuLabel": "バージョン",
   "LanguageLabel": "言語：",
+  "DecompressDirectoryLabel": "解凍先ディレクトリ：",
+  "BrowseButton": "参照",
   "BmsEventLabel": "BMSイベント：",
   "NameLabel": "名前：",
   "SaveButton": "保存",

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="{Binding Localization.OptionsWindowTitle}"
         Width="480"
-        Height="320"
+        Height="360"
         WindowStartupLocation="CenterOwner">
     <StackPanel Margin="20">
         <TextBlock Text="{Binding Localization.LanguageLabel}"
@@ -15,5 +15,19 @@
                   SelectedValuePath="Code"
                   SelectedValue="{Binding SelectedLanguage, Mode=TwoWay}"
                   Margin="0,0,0,12" />
+
+        <TextBlock Text="{Binding Localization.DecompressDirectoryLabel}"
+                   Margin="0,0,0,6" />
+
+        <DockPanel LastChildFill="True">
+            <Button Content="{Binding Localization.BrowseButton}"
+                    Command="{Binding BrowseDecompressDirCommand}"
+                    DockPanel.Dock="Right"
+                    Padding="12,4"
+                    Margin="8,0,0,0" />
+            <TextBlock Text="{Binding DecompressDir}"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center" />
+        </DockPanel>
     </StackPanel>
 </Window>

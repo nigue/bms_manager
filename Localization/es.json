@@ -5,6 +5,8 @@
   "HelpMenuLabel": "Ayuda",
   "VersionSubMenuLabel": "Versión",
   "LanguageLabel": "Idioma:",
+  "DecompressDirectoryLabel": "Directorio de descompresión:",
+  "BrowseButton": "Examinar",
   "BmsEventLabel": "Evento BMS:",
   "NameLabel": "Nombre:",
   "SaveButton": "Guardar",
