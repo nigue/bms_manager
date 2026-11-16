@@ -20,6 +20,7 @@
     </Page>
     <Resource Include="Assets\icon.ico" />
     <Content Include="Localization\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Infrastructure\Data\manbow.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
