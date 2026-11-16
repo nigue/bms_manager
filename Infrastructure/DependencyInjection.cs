@@ -9,7 +9,7 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddSingleton<INameRepository, InMemoryNameRepository>();
-        services.AddSingleton<IBmsEventRepository, InMemoryBmsEventRepository>();
+        services.AddSingleton<IBmsEventRepository, ManbowBmsEventRepository>();
         services.AddSingleton<IAppConfigurationRepository, AppConfigurationRepository>();
 
         return services;

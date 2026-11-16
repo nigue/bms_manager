@@ -1,9 +1,11 @@
-﻿namespace bms_manager.Infrastructure.Dto;
+﻿using bms_manager.Domain.Model;
+
+namespace bms_manager.Infrastructure.Dto;
 
 public record ManbowBmsEventDto(
     int EventNumber,
     string Name,
-    string FolderName,
+    IReadOnlyList<string> FolderName,
     string NameLink,
     string RegistrationDate,
     string ImpressionDate,
@@ -15,5 +17,5 @@ public record ManbowBmsEventDto(
     bool Available
 )
 {
-    
+    public BmsEvent ToModel() => new(EventNumber, Name);
 };
