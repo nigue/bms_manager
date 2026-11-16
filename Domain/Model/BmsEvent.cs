@@ -2,7 +2,7 @@
 
 namespace bms_manager.Domain.Model;
 
-public record BmsEvent(Guid identifier, int number, string name)
+public record BmsEvent(int number, string name)
 {
-    public BmsEventModel ToModel() => new(identifier, number, name);
+    public BmsEventModel ToModel() => new(number, name);
 }

@@ -8,16 +8,16 @@ public sealed class InMemoryBmsEventRepository : IBmsEventRepository
 {
     private static readonly IReadOnlyList<BmsEventDto> Events =
     [
-        new(Guid.NewGuid(), 1, "Evento 1"),
-        new(Guid.NewGuid(), 2, "Evento 2"),
-        new(Guid.NewGuid(), 3, "Evento 3"),
-        new(Guid.NewGuid(), 4, "Evento 4"),
-        new(Guid.NewGuid(), 5, "Evento 5"),
-        new(Guid.NewGuid(), 6, "Evento 6"),
-        new(Guid.NewGuid(), 7, "Evento 7"),
-        new(Guid.NewGuid(), 8, "Evento 8"),
-        new(Guid.NewGuid(), 9, "Evento 9"),
-        new(Guid.NewGuid(), 10, "Evento 10")
+        new(1, "Evento 1"),
+        new(2, "Evento 2"),
+        new(3, "Evento 3"),
+        new(4, "Evento 4"),
+        new(5, "Evento 5"),
+        new(6, "Evento 6"),
+        new(7, "Evento 7"),
+        new(8, "Evento 8"),
+        new(9, "Evento 9"),
+        new(10, "Evento 10")
     ];
 
     public IReadOnlyList<BmsEvent> GetAll()
