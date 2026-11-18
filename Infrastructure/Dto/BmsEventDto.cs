@@ -2,7 +2,7 @@
 
 namespace bms_manager.Infrastructure.Dto;
 
-public record BmsEventDto(int number, string name)
+public record BmsEventDto(int number, string name, string date)
 {
-    public BmsEvent ToModel() => new(number, name);
+    public BmsEvent ToModel() => new(number, name, date);
 }

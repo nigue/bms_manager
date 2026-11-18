@@ -17,5 +17,9 @@ public record ManbowBmsEventDto(
     bool Available
 )
 {
-    public BmsEvent ToModel() => new(EventNumber, Name);
+    public BmsEvent ToModel()
+    {
+        string date = ImpressionDate.Split("～")[0];
+        return new(EventNumber, Name, date);
+    }
 };
