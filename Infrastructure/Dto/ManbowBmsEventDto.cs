@@ -3,6 +3,7 @@
 namespace bms_manager.Infrastructure.Dto;
 
 public record ManbowBmsEventDto(
+    int ItemNumber,
     int EventNumber,
     string Name,
     IReadOnlyList<string> FolderName,
@@ -20,6 +21,6 @@ public record ManbowBmsEventDto(
     public BmsEvent ToModel()
     {
         string date = ImpressionDate.Split("～")[0];
-        return new(EventNumber, Name, date);
+        return new(ItemNumber, Name, date);
     }
 };
