@@ -11,7 +11,7 @@
     "information_link": "https://scytheleg.sakura.ne.jp/tempyou/event/ww_battle2/",
     "details_link": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=153",
     "list_link": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=153",
-    "available": false
+    "available": true
   },
   {
     "event_number": 151,
@@ -25,7 +25,7 @@
     "information_link": "https://2026.mumeisena1climax.com/",
     "details_link": "https://manbow.nothing.sh/event/event.cgi?action=Details&event=151",
     "list_link": "https://manbow.nothing.sh/event/event.cgi?action=List_def&event=151",
-    "available": false
+    "available": true
   },
   {
     "event_number": 150,

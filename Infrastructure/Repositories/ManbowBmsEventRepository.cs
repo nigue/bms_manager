@@ -31,6 +31,7 @@ public sealed class ManbowBmsEventRepository : IBmsEventRepository
     public IReadOnlyList<BmsEvent> GetAll()
     {
         return _events
+            .Where(bmsEvent => bmsEvent.Available)
             .Select(bmsEvent => bmsEvent.ToModel())
             .ToArray();
     }
