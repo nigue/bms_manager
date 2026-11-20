@@ -1,0 +1,882 @@
+[
+  {
+    "song_number": 1,
+    "team": "A-1 ClimaX 2026",
+    "artist": "RNY",
+    "genre": "Piano Hardcore",
+    "title": "ArcanicA",
+    "total": 438,
+    "regist": "2026/05/11 00:00",
+    "update": "2026/06/07 23:55"
+  },
+  {
+    "song_number": 2,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Merina. feat.ゲキヤク,ナースロボ_タイプT",
+    "genre": "\"To my Dearest.\"",
+    "title": "珈琲ト万年筆。",
+    "total": 474,
+    "regist": "2026/05/11 00:01",
+    "update": "2026/06/07 23:31"
+  },
+  {
+    "song_number": 3,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "DOANOB",
+    "genre": "A lone cry",
+    "title": "Bent shout",
+    "total": 555,
+    "regist": "2026/05/11 00:01",
+    "update": "2026/06/13 11:20"
+  },
+  {
+    "song_number": 4,
+    "team": "A-1 ClimaX 2026",
+    "artist": "oo-kani",
+    "genre": "Speedcore",
+    "title": "The Key and The Gate",
+    "total": 329,
+    "regist": "2026/05/11 00:01",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 5,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Shishamo",
+    "genre": "Shishamocore",
+    "title": "New Horizons",
+    "total": 425,
+    "regist": "2026/05/11 00:01",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 6,
+    "team": "A-1 ClimaX 2026",
+    "artist": "DJ ONYT",
+    "genre": "ミニマル・コンテンポラリー",
+    "title": "燕",
+    "total": 323,
+    "regist": "2026/05/11 00:01",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 7,
+    "team": "A-1 ClimaX 2026",
+    "artist": "DJ ARASHI",
+    "genre": "HARD RENAISSANCE",
+    "title": "Crimson Garuda",
+    "total": 428,
+    "regist": "2026/05/11 00:02",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 8,
+    "team": "A-1 ClimaX 2026",
+    "artist": "motz feat.リコピン",
+    "genre": "Psychedelic Denpa Pop",
+    "title": "【脳内完熟警報】トマト絶対主義☆アイドル崩壊論 x トマトパニック☆赤色征服計画～自我も常識もプロ根性CRUSH!!",
+    "total": 187,
+    "regist": "2026/05/11 00:02",
+    "update": "2026/06/07 23:17"
+  },
+  {
+    "song_number": 9,
+    "team": "A-1 ClimaX 2026",
+    "artist": "やまだぶりん",
+    "genre": "TECHNO CUTUP",
+    "title": "モノクロマ",
+    "total": 565,
+    "regist": "2026/05/11 00:02",
+    "update": "2026/06/07 23:59"
+  },
+  {
+    "song_number": 10,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Seori (Rain's Avenue)",
+    "genre": "Hybrid Crossover",
+    "title": "The Queen's Execution",
+    "total": 381,
+    "regist": "2026/05/11 00:02",
+    "update": "2026/06/07 23:59"
+  },
+  {
+    "song_number": 11,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Yobit",
+    "genre": "GothicHardcore",
+    "title": "Magia della Distruzione",
+    "total": 355,
+    "regist": "2026/05/11 00:02",
+    "update": "2026/06/07 23:34"
+  },
+  {
+    "song_number": 12,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Pafa",
+    "genre": "HYPER TECH TRANCE",
+    "title": "integrated inspiration",
+    "total": 333,
+    "regist": "2026/05/11 00:05",
+    "update": "2026/06/07 23:35"
+  },
+  {
+    "song_number": 13,
+    "team": "A-1 ClimaX 2026",
+    "artist": "etowa",
+    "genre": "VocalStep",
+    "title": "PENOMBRE feat.Ai Hisano",
+    "total": 618,
+    "regist": "2026/05/11 00:05",
+    "update": "2026/06/07 23:35"
+  },
+  {
+    "song_number": 14,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "keres",
+    "genre": "Trance",
+    "title": "Ascarise",
+    "total": 371,
+    "regist": "2026/05/11 00:05",
+    "update": "2026/06/07 23:53"
+  },
+  {
+    "song_number": 15,
+    "team": "A-1 ClimaX 2026",
+    "artist": "hororo feat.記憶に残る",
+    "genre": "ロック",
+    "title": "クレイヴド",
+    "total": 566,
+    "regist": "2026/05/11 00:06",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 16,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Payload",
+    "genre": "UK HARDCORE",
+    "title": "accumulation 1",
+    "total": 476,
+    "regist": "2026/05/11 00:07",
+    "update": "2026/06/07 23:54"
+  },
+  {
+    "song_number": 17,
+    "team": "A-1 ClimaX 2026",
+    "artist": "YuKa feat.HALO",
+    "genre": "HAPPY SWEET CORE",
+    "title": "すいーつ・くえすと！",
+    "total": 534,
+    "regist": "2026/05/11 00:08",
+    "update": "2026/06/07 23:37"
+  },
+  {
+    "song_number": 18,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "KA2TA5",
+    "genre": "TRANCE CORE",
+    "title": "Hope Philosophy",
+    "total": 311,
+    "regist": "2026/05/11 00:08",
+    "update": "2026/06/07 23:56"
+  },
+  {
+    "song_number": 19,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "てのり",
+    "genre": "Happy Hardcore",
+    "title": "Cup of the Stardust",
+    "total": 576,
+    "regist": "2026/05/11 00:08",
+    "update": "2026/06/07 23:56"
+  },
+  {
+    "song_number": 20,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "TsuBaKi",
+    "genre": "Kawaii Drum'n'Bass",
+    "title": "Snow Step",
+    "total": 324,
+    "regist": "2026/05/11 00:08",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 21,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "i Square",
+    "genre": "J-Happy Hardcore",
+    "title": "Stellaphoria",
+    "total": 471,
+    "regist": "2026/05/11 00:09",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 22,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Verxina",
+    "genre": "ARTCORE",
+    "title": "Synchronic",
+    "total": 267,
+    "regist": "2026/05/11 00:11",
+    "update": "2026/06/07 23:42"
+  },
+  {
+    "song_number": 23,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Wiz",
+    "genre": "Epic+Artcore",
+    "title": "Crystal of Artifacts",
+    "total": 468,
+    "regist": "2026/05/11 00:14",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 24,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Constellation",
+    "genre": "Trancecore",
+    "title": "Void Creation Method",
+    "total": 366,
+    "regist": "2026/05/11 00:16",
+    "update": "2026/06/07 23:51"
+  },
+  {
+    "song_number": 25,
+    "team": "A-1 ClimaX 2026",
+    "artist": "DJ Adrichii",
+    "genre": "NATSUKASHII TRANCE",
+    "title": "Prismatic Sunset",
+    "total": 436,
+    "regist": "2026/05/11 00:21",
+    "update": "2026/06/07 23:59"
+  },
+  {
+    "song_number": 26,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "NOiS",
+    "genre": "Fairy Tale",
+    "title": "星のワルツ",
+    "total": 317,
+    "regist": "2026/05/11 00:45",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 27,
+    "team": "A-1 ClimaX 2026",
+    "artist": "old young boy",
+    "genre": "Nu Beat",
+    "title": "Disco No.a604053",
+    "total": 412,
+    "regist": "2026/05/11 00:59",
+    "update": "2026/06/07 23:45"
+  },
+  {
+    "song_number": 28,
+    "team": "A-1 ClimaX 2026",
+    "artist": "YtzkA",
+    "genre": "蒼空",
+    "title": "unexpected blue sky.",
+    "total": 424,
+    "regist": "2026/05/11 02:03",
+    "update": "2026/06/07 23:50"
+  },
+  {
+    "song_number": 29,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "EwanXuaN",
+    "genre": "2000s Metalcore",
+    "title": "Dawn Of An New Era",
+    "total": 368,
+    "regist": "2026/05/11 02:08",
+    "update": "2026/06/07 23:59"
+  },
+  {
+    "song_number": 30,
+    "team": "A-1 ClimaX 2026",
+    "artist": "風間賢二",
+    "genre": "アンキャニーバレー",
+    "title": "猫の毛づくろい",
+    "total": 295,
+    "regist": "2026/05/11 11:29",
+    "update": "2026/06/08 13:37"
+  },
+  {
+    "song_number": 31,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Gub",
+    "genre": "Hard-artcore",
+    "title": "NULL_VOID (Disq)",
+    "total": 0,
+    "regist": "2026/05/11 12:58",
+    "update": "2026/06/06 22:28"
+  },
+  {
+    "song_number": 32,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "JUNGNBASS",
+    "genre": "CyberArt",
+    "title": "Plastikovye krylya",
+    "total": 322,
+    "regist": "2026/05/11 17:20",
+    "update": "2026/06/07 23:43"
+  },
+  {
+    "song_number": 33,
+    "team": "A-1 ClimaX 2026",
+    "artist": "NanaSaku",
+    "genre": "TRANCE",
+    "title": "LyroniX (BMS edit)",
+    "total": 465,
+    "regist": "2026/05/11 19:01",
+    "update": "2026/06/07 23:46"
+  },
+  {
+    "song_number": 34,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Utuka",
+    "genre": "EXPULSION",
+    "title": "MaliceMare",
+    "total": 379,
+    "regist": "2026/05/11 19:21",
+    "update": "2026/06/07 23:47"
+  },
+  {
+    "song_number": 35,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Ik",
+    "genre": "artcore",
+    "title": "World of Flowers",
+    "total": 316,
+    "regist": "2026/05/11 21:34",
+    "update": "2026/06/07 23:55"
+  },
+  {
+    "song_number": 36,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Mikuroさいな",
+    "genre": "Euro Rave Tech",
+    "title": "Broken Brake",
+    "total": 325,
+    "regist": "2026/05/11 22:35",
+    "update": "2026/06/07 23:44"
+  },
+  {
+    "song_number": 37,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "で～～～ん",
+    "genre": "Lolicore",
+    "title": "私のアニメ愛を止められなかったお前らが悪い！ (Disq)",
+    "total": 0,
+    "regist": "2026/05/11 22:45",
+    "update": "2026/06/07 23:10"
+  },
+  {
+    "song_number": 38,
+    "team": "A-1 ClimaX 2026",
+    "artist": "oven-cat",
+    "genre": "MOOMBAHCORE",
+    "title": "Quantum Riddle",
+    "total": 457,
+    "regist": "2026/05/11 23:49",
+    "update": "2026/06/07 23:47"
+  },
+  {
+    "song_number": 39,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "nbunnyuwu",
+    "genre": "wandering_01",
+    "title": "202603",
+    "total": 538,
+    "regist": "2026/05/12 02:01",
+    "update": "2026/06/07 23:52"
+  },
+  {
+    "song_number": 40,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "万響Bankyo(UANwork)",
+    "genre": "Emotion Techno",
+    "title": "Take out my mind",
+    "total": 405,
+    "regist": "2026/05/12 06:07",
+    "update": "2026/06/18 03:23"
+  },
+  {
+    "song_number": 41,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Cadoea",
+    "genre": "Artcore",
+    "title": "Aletheia：Unveiled",
+    "total": 355,
+    "regist": "2026/05/12 20:00",
+    "update": "2026/06/07 23:52"
+  },
+  {
+    "song_number": 42,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Lalot.",
+    "genre": "Last Dance",
+    "title": "王者",
+    "total": 347,
+    "regist": "2026/05/12 20:59",
+    "update": "2026/06/07 23:47"
+  },
+  {
+    "song_number": 43,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Quint",
+    "genre": "Industrial Techno",
+    "title": "雑踏に沈む",
+    "total": 446,
+    "regist": "2026/05/12 21:47",
+    "update": "2026/06/07 23:55"
+  },
+  {
+    "song_number": 44,
+    "team": "A-1 ClimaX 2026",
+    "artist": "crossworld",
+    "genre": "AWAKENING SIGNAL",
+    "title": "beacon",
+    "total": 372,
+    "regist": "2026/05/13 20:02",
+    "update": "2026/06/07 23:47"
+  },
+  {
+    "song_number": 45,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "HaWooL4",
+    "genre": "sweet dreams",
+    "title": "(Zzz)",
+    "total": 344,
+    "regist": "2026/05/13 20:41",
+    "update": "2026/06/07 23:47"
+  },
+  {
+    "song_number": 46,
+    "team": "A-1 ClimaX 2026",
+    "artist": "kiikurute!!",
+    "genre": "Sci-fi Rock",
+    "title": "Now Romantc",
+    "total": 424,
+    "regist": "2026/05/13 23:16",
+    "update": "2026/06/07 23:48"
+  },
+  {
+    "song_number": 47,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "HYSNS",
+    "genre": "Electro Ambient",
+    "title": "浄華",
+    "total": 340,
+    "regist": "2026/05/14 05:36",
+    "update": "2026/06/07 23:48"
+  },
+  {
+    "song_number": 48,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "gomatoro",
+    "genre": "HARDCORE",
+    "title": "Skyvmui Lypham",
+    "total": 419,
+    "regist": "2026/05/14 19:47",
+    "update": "2026/06/07 23:54"
+  },
+  {
+    "song_number": 49,
+    "team": "A-1 ClimaX 2026",
+    "artist": "げうげうｒ / 音楽的同位体 星界",
+    "genre": "Хардкор",
+    "title": "Алмасты ( Хардкорный ремикс )",
+    "total": 414,
+    "regist": "2026/05/15 03:38",
+    "update": "2026/06/07 23:49"
+  },
+  {
+    "song_number": 50,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "vPhos",
+    "genre": "TECHCORE",
+    "title": "UNDER THE R4DAR",
+    "total": 433,
+    "regist": "2026/05/15 18:38",
+    "update": "2026/06/07 23:49"
+  },
+  {
+    "song_number": 51,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "飛燕",
+    "genre": "Psychedelic Trance",
+    "title": "CELESTIAL ECHO",
+    "total": 379,
+    "regist": "2026/05/16 00:29",
+    "update": "2026/06/07 23:49"
+  },
+  {
+    "song_number": 52,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Towa Hisanaga",
+    "genre": "PARTYSTYLE",
+    "title": "#PL4Y_THE_G4ME",
+    "total": 547,
+    "regist": "2026/05/16 13:50",
+    "update": "2026/06/07 23:50"
+  },
+  {
+    "song_number": 53,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "LEO Sailko",
+    "genre": "glitch chiptune",
+    "title": "Journey Through the Untitled",
+    "total": 461,
+    "regist": "2026/05/16 16:06",
+    "update": "2026/06/07 23:53"
+  },
+  {
+    "song_number": 54,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "LSC",
+    "genre": "hardcore Techno",
+    "title": "BeyØnd the UniVerse",
+    "total": 251,
+    "regist": "2026/05/16 18:18",
+    "update": "2026/06/07 23:50"
+  },
+  {
+    "song_number": 55,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "MAY.AM",
+    "genre": "ELECTRO",
+    "title": "Sudden Abstraction",
+    "total": 308,
+    "regist": "2026/05/16 19:46",
+    "update": "2026/06/08 07:25"
+  },
+  {
+    "song_number": 56,
+    "team": "A-1 ClimaX 2026",
+    "artist": "YAN*TS",
+    "genre": "90s-DIGITAL J-POP",
+    "title": "DRASTIC SNOW",
+    "total": 276,
+    "regist": "2026/05/16 22:28",
+    "update": "2026/06/07 23:51"
+  },
+  {
+    "song_number": 57,
+    "team": "A-1 ClimaX 2026",
+    "artist": "kdcysth",
+    "genre": "UNPLEASANT REMINISCENCE",
+    "title": "YOUR REALITY FLIP",
+    "total": 446,
+    "regist": "2026/05/17 02:27",
+    "update": "2026/06/07 23:53"
+  },
+  {
+    "song_number": 58,
+    "team": "A-1 ClimaX 2026",
+    "artist": "fantastick",
+    "genre": "UK Grime",
+    "title": "Tension_F",
+    "total": 275,
+    "regist": "2026/05/17 05:09",
+    "update": "2026/06/07 23:52"
+  },
+  {
+    "song_number": 59,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "MΛKU:駆",
+    "genre": "Everyday Life",
+    "title": "quiet garden",
+    "total": 262,
+    "regist": "2026/05/17 09:19",
+    "update": "2026/06/07 23:52"
+  },
+  {
+    "song_number": 60,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Fezike",
+    "genre": "Drum'n'Future Bass",
+    "title": "A CUP OF #C0FFEE",
+    "total": 307,
+    "regist": "2026/05/17 12:26",
+    "update": "2026/06/07 23:53"
+  },
+  {
+    "song_number": 61,
+    "team": "A-1 ClimaX 2026",
+    "artist": "DJ SAYSO48",
+    "genre": "電子DANCE / Arena Techno",
+    "title": "Genbu Gun",
+    "total": 402,
+    "regist": "2026/05/17 13:10",
+    "update": "2026/06/07 23:53"
+  },
+  {
+    "song_number": 62,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Cider.",
+    "genre": "UK HARDCORE",
+    "title": "Going on",
+    "total": 309,
+    "regist": "2026/05/17 13:15",
+    "update": "2026/06/07 23:53"
+  },
+  {
+    "song_number": 63,
+    "team": "A-1 ClimaX 2026",
+    "artist": "system [Σ]",
+    "genre": "piano ambience",
+    "title": "memories",
+    "total": 344,
+    "regist": "2026/05/17 14:13",
+    "update": "2026/06/07 23:54"
+  },
+  {
+    "song_number": 64,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Kurast703",
+    "genre": "Drum & Bass/Wild House!",
+    "title": "Wild Day Pt.3",
+    "total": 320,
+    "regist": "2026/05/17 15:14",
+    "update": "2026/06/07 23:55"
+  },
+  {
+    "song_number": 65,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "soonyan",
+    "genre": "Natural disaster",
+    "title": "SolarFlare",
+    "total": 198,
+    "regist": "2026/05/17 18:18",
+    "update": "2026/06/07 23:54"
+  },
+  {
+    "song_number": 66,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Y.",
+    "genre": "TECHNO",
+    "title": "One-way Door",
+    "total": 342,
+    "regist": "2026/05/17 20:16",
+    "update": "2026/06/07 23:55"
+  },
+  {
+    "song_number": 67,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "zegudo.",
+    "genre": "TRIVAL CORE",
+    "title": "KORVEQX",
+    "total": 278,
+    "regist": "2026/05/17 20:43",
+    "update": "2026/06/07 23:55"
+  },
+  {
+    "song_number": 68,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Tsukimi☆",
+    "genre": "Rebirth",
+    "title": "Astra",
+    "total": 323,
+    "regist": "2026/05/17 20:59",
+    "update": "2026/06/07 23:56"
+  },
+  {
+    "song_number": 69,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Mary's Doll",
+    "genre": "REVIVAL",
+    "title": "王国に伝わる蒼玉の冠 ～ある女王の軌跡～",
+    "total": 287,
+    "regist": "2026/05/17 21:58",
+    "update": "2026/06/07 23:56"
+  },
+  {
+    "song_number": 70,
+    "team": "A-1 ClimaX 2026",
+    "artist": "またかま",
+    "genre": "progressive",
+    "title": "【大言壮語】",
+    "total": 425,
+    "regist": "2026/05/17 22:23",
+    "update": "2026/06/08 00:00"
+  },
+  {
+    "song_number": 71,
+    "team": "A-1 ClimaX 2026",
+    "artist": "snowsphere",
+    "genre": "ELECTRONICA",
+    "title": "step",
+    "total": 379,
+    "regist": "2026/05/17 22:27",
+    "update": "2026/07/05 15:01"
+  },
+  {
+    "song_number": 72,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "_Decuplequart_",
+    "genre": "EXPERIMENTAL CHAMBER ELECTRONICA?",
+    "title": "CANVAS WORLD",
+    "total": 286,
+    "regist": "2026/05/17 22:35",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 73,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "T-Project",
+    "genre": "Hitech Fullon",
+    "title": "Lapis Lazuli",
+    "total": 293,
+    "regist": "2026/05/17 22:47",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 74,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Daniel Rotwind",
+    "genre": "World Ambient",
+    "title": "Fernweh",
+    "total": 341,
+    "regist": "2026/05/17 22:59",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 75,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Hexd! /bgi:keleu",
+    "genre": "techno",
+    "title": "Mother'ship",
+    "total": 243,
+    "regist": "2026/05/17 23:05",
+    "update": "2026/06/07 23:58"
+  },
+  {
+    "song_number": 76,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Kalse feat.Nakuru",
+    "genre": "Gothic Hardcore",
+    "title": "Ara Arcus",
+    "total": 377,
+    "regist": "2026/05/17 23:17",
+    "update": "2026/06/08 00:26"
+  },
+  {
+    "song_number": 77,
+    "team": "A-1 ClimaX 2026",
+    "artist": "nebulaimako",
+    "genre": "SLIMEPUNK",
+    "title": "DRWN",
+    "total": 531,
+    "regist": "2026/05/17 23:33",
+    "update": "2026/06/09 01:58"
+  },
+  {
+    "song_number": 78,
+    "team": "A-1 ClimaX 2026",
+    "artist": "NanaSaku remixed by ピンクだま",
+    "genre": "P-TEK",
+    "title": "Hopexis(ピンクだま Remix)",
+    "total": 262,
+    "regist": "2026/05/17 23:34",
+    "update": "2026/06/07 23:59"
+  },
+  {
+    "song_number": 79,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Parse Asterisk",
+    "genre": "和風ElectricHouse",
+    "title": "星桜水鏡-Quantum Reflection-",
+    "total": 281,
+    "regist": "2026/05/17 23:40",
+    "update": "2026/06/07 23:54"
+  },
+  {
+    "song_number": 80,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "DawMii",
+    "genre": "Speedcore",
+    "title": "TiTANiANOVA",
+    "total": 244,
+    "regist": "2026/05/17 23:47",
+    "update": "2026/06/07 23:54"
+  },
+  {
+    "song_number": 81,
+    "team": "A-1 ClimaX 2026",
+    "artist": "えびです",
+    "genre": "OLD SKOOL RAVE",
+    "title": "new old MASSIVE",
+    "total": 412,
+    "regist": "2026/05/17 23:49",
+    "update": "2026/06/07 23:55"
+  },
+  {
+    "song_number": 82,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "xeninsect",
+    "genre": "Ambient House?",
+    "title": "NIGHT DANCE",
+    "total": 288,
+    "regist": "2026/05/17 23:49",
+    "update": "2026/06/07 23:56"
+  },
+  {
+    "song_number": 83,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Pooh5821",
+    "genre": "Piano Progressive",
+    "title": "toアシタ",
+    "total": 326,
+    "regist": "2026/05/17 23:54",
+    "update": "2026/06/07 23:56"
+  },
+  {
+    "song_number": 84,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "GM_Shadows",
+    "genre": "Confession",
+    "title": "DANCING IN MY MIND",
+    "total": 413,
+    "regist": "2026/05/17 23:54",
+    "update": "2026/06/07 23:56"
+  },
+  {
+    "song_number": 85,
+    "team": "A-1 ClimaX 2026",
+    "artist": "Tyoukou",
+    "genre": "2.Whimsical electrical tactical test!",
+    "title": "バズバズ・バジー・アンプロンプチュ",
+    "total": 248,
+    "regist": "2026/05/17 23:55",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 86,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Nakuya (泣くや)",
+    "genre": "Story",
+    "title": "私からの手紙",
+    "total": 256,
+    "regist": "2026/05/17 23:57",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 87,
+    "team": "A-1 ClimaX 2026",
+    "artist": "こんさん feat. くりゅさん",
+    "genre": "BRAZILIAN HOUSE",
+    "title": "Fleur de lune",
+    "total": 479,
+    "regist": "2026/05/17 23:57",
+    "update": "2026/06/07 23:57"
+  },
+  {
+    "song_number": 88,
+    "team": "自称無名BMS作家が物申す！ 2026",
+    "artist": "Mi*",
+    "genre": "Trancecore, Botanica",
+    "title": "katharsis",
+    "total": 302,
+    "regist": "2026/05/18 00:03",
+    "update": "2026/06/07 23:59"
+  }
+]
