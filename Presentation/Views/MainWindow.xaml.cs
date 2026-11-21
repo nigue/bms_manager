@@ -1,5 +1,6 @@
 using bms_manager.Presentation.ViewModels;
 using bms_manager.Presentation.Views.Sections.SubSections;
+using bms_manager.Presentation.Models;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -27,9 +28,10 @@ public partial class MainWindow : Window
 
     private void BmsEvents_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        if (e.AddedItems.Count > 0)
+        if (e.AddedItems.Count > 0 &&
+            e.AddedItems[0] is BmsEventModel selectedEvent)
         {
-            MessageBox.Show("Elemento Seleccionado");
+            MessageBox.Show($"Elemento Seleccionado: {selectedEvent.date} - {selectedEvent.name}");
         }
     }
 }
