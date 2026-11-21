@@ -1,6 +1,7 @@
 using bms_manager.Presentation.ViewModels;
 using bms_manager.Presentation.Views.Sections.SubSections;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
 namespace bms_manager.Presentation.Views;
@@ -22,5 +23,13 @@ public partial class MainWindow : Window
 
             optionsWindow.Show();
         };
+    }
+
+    private void BmsEvents_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (e.AddedItems.Count > 0)
+        {
+            MessageBox.Show("Elemento Seleccionado");
+        }
     }
 }
